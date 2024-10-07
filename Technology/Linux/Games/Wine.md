@@ -1,7 +1,3 @@
----
-label: Wine/Proton
----
-
 [Wine](https://www.winehq.org/) is a compatibility layer that allows users to run Windows applications in Linux systems. A paid / commercial version of it also exists, called [CrossOver](https://www.codeweavers.com/crossover).
 
 In gaming, there are usually 4 different versions of wine that's used:

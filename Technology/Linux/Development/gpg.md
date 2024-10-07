@@ -1,7 +1,3 @@
----
-label: gpg
----
-
 ## Creating an gpg key
 
 1. Install gpg on your system

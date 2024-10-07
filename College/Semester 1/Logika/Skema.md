@@ -1,0 +1,1 @@
+Skema adalah cara menyederhanakan jalur suatu logika. Bisa dibilang skema adalah suatu flowchart yang menjelaskan suatu logika dan akibatnya.

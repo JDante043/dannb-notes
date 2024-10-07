@@ -1,7 +1,3 @@
----
-label: Steam
----
-
 Installing steam should be easy enough, check your distro's package manager for it. Make sure to install the appropriate drivers for your device first, especially your graphics driver.
 
 ## Games won't use NVIDIA in dual-graphics system
