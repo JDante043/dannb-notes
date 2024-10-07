@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "003c4914e422351f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GIT TEST.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "College/Semester 1/Statistika/Distribusi.md",
+                "file": "GIT TEST.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "College/Semester 1/Statistika/Distribusi.md",
+                "file": "GIT TEST.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "College/Semester 1/Statistika/Distribusi.md"
+                "file": "GIT TEST.md"
               }
             }
           }
@@ -147,8 +160,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7013dca4bc8ee0e2",
+  "active": "003c4914e422351f",
   "lastOpenFiles": [
+    "College/Semester 1/Statistika/Distribusi.md",
+    "GIT TEST.md",
     "retype.yml",
     "Index.md",
     "dannb-notes/retype.yml",
@@ -168,7 +183,6 @@
     "College/Semester 1/Fisika/Kinematika.md",
     "College/Semester 1/Statistika/3M.md",
     "College/Semester 1/Statistika/Probabilitas.md",
-    "College/Semester 1/Statistika/Distribusi.md",
     "College/Semester 1/Statistika/Peluang.md",
     "College/Semester 1/Logika/Skema.md",
     "College/Semester 1/Logika/Operator Logika.md",
@@ -177,7 +191,6 @@
     "College/Semester 1/Kalkulus/Turunan.md",
     "College/Semester 1/Kalkulus/Limit.md",
     "College/Semester 1/IMK/Perkenalan.md",
-    "Untitled.md",
     "College/Semester 1/Fisika/Kelistrikan.md",
     "College/Semester 1/Fisika/Getaran.md"
   ]
