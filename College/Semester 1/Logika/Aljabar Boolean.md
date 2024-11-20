@@ -58,7 +58,7 @@ Untuk menyederhanakan:
 - setiap grup mempunyai nilai 2 dipangkat ($2^0; 2^1; 2^2, ...$)
 - Di contoh di atas, terdapat 3 grup, atas, kiri, dan kanan
 - Di setiap grup, lihat variabel yang tidak berubah:
-	- Di grup atas, hanya variabel Y dan Z saja yang tidak berubah, maka suku pertama fungsi adalah Y'Z'
+	- Di grup atas, hanya variabel Y dan Z saja yang tidak berubah, yaitu ketika mereka nilainya 0, maka suku pertama fungsi adalah Y'Z'
 	- Di grup kanan, W, X, dan Y tidak berubah, maka suku kedua adalah WX'Y
 	- Di grup kiri, semua variabel tidak berubah, maka suku ketiga adalah W'X'YZ'
 - Setelah semua suku sudah disederhanakan, maka bisa dibuat fungsi sederhana bentuk SOP: $f(x) = Y\prime Z\prime + WX\prime Y + W\prime X\prime YZ\prime$

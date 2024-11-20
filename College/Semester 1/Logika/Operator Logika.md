@@ -4,11 +4,11 @@ Operator di logika merupakan sebuah fungsi boolean. Di dunia nyata, operator mer
 Di dalam logika terdapat beberapa operator:
 
 [List simbol logika di LaTeX](https://en.wikipedia.org/wiki/List_of_logic_symbols)
-- AND / Konjungsi ($\wedge$)
-- OR / Disjungsi ($\vee$)
-- NOT / Negasi ($!, \neg$)
-- IMPLY / Implikasi($\rightarrow, \implies, \supset$)
-- EQUIV / Biimplikasi ($\leftrightarrow,\iff$)
+- AND / =AND() / Konjungsi ($\wedge$)
+- OR / =OR() / Disjungsi ($\vee$)
+- NOT / =NOT() / Negasi ($!, \neg,$)
+- IMPLY / =IF(x;x;TRUE) / Implikasi($\rightarrow, \implies, \supset$)
+- EQUIV / "=" / Biimplikasi ($\leftrightarrow,\iff$)
 - NAND / Tidak Dan ($|$)
 - NOR / Tidak Atau ($\mp$)
 - XOR / Disjungsi Eksklusif ($\oplus$)
@@ -60,6 +60,7 @@ Disimbolkan dengan $\leftrightarrow$, Bi-implikasi menghasilkan TRUE jika kedua 
 | T   | F   | F                     |
 | F   | T   | F                     |
 | F   | F   | T                     |
+
 
 ## NAND / Tidak Dan
 Disimbolkan dengan $|$, NAND menghasilkan TRUE **kecuali** kedua A dan B nilainya **TRUE**:

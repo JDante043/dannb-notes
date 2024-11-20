@@ -1,12 +1,15 @@
 Distribusi dalam statistika adalah cara / bagaimana setiap probabilitas didistribusikan.
 
+- Dalam distribusi diskrit, menghitung banyaknya suatu kemungkinan biasanya dengan $\Sigma_{x=n}^N f(x)$, di mana $n$ adalah $x$ paling kecil, dan $N$ adalah $x$ paling banyak.
+- Dalam distribusi kontinu, gunakan $\int_n^N f(x) dx$
+
 # Diskrit
 ## Distribusi Binomial
 Distribusi binomial adalah distribusi di mana hasil akhir hanya berupa 2 kemungkinan ("Cacat / Tidak cacat", "Berhasil / Tidak Berhasil", dll.) dan terdapat **pengembalian**.
 
 $$\begin{align}
-P = \binom{x}{n}p^x q^{n-x}\\
-\mu = xp\\
+P = \binom{n}{x}p^x q^{n-x}\\
+\mu = np\\
 \sigma^2 = npq
 \end{align}$$
 $x$ = Berapa kali percobaan dilakukan
