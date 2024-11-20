@@ -232,7 +232,115 @@ S = 1.2\\
 \chi^2_H = \frac{9\cdot 1.2^2}{0.9^2}=16\\
 \chi^2_{0.05;10}=18\\
 \\
-\chi_H^2 > \chi^2\text{, hipotesis diterima}
+\chi_H^2 < \chi^2\text{, hipotesis diterima}
 \end{align}$$
 
-# Hipotesis Selisih Varians
+# Hipotesis Selisih / Rasio Varians
+## Cek $\sigma_A = \sigma_B$?
+$$\begin{align}
+f_H = \frac{s_A^2}{s_B^2}
+\end{align}$$
+Setelah mencari nilai $f_H$, kita bandingkan dengan batas $f_H < f_{1-0.5\alpha;vA;vB} \text{ dan }f > f_{0.5\alpha;vA;vB}$, di mana $v_A = n_A - 1 \text{ dan } v_B = n_B - 2$.
+
+## Cek $\sigma_A > \sigma_B \text{ atau }\sigma_A < \sigma_B$?
+Setelah mencari $f_H$:
+- $\sigma_A > \sigma_B\rightarrow f_H > f_{\alpha;v1;v2}$
+- $\sigma_A < \sigma_B \rightarrow f_H < f_{1-\alpha;v1;v2}$
+
+## Contoh Soal Hipotesis Selisih Varians
+1. Sebuah percobaan sosial dilakukan untuk membuktikan bahwa $\sigma_W^2 = \sigma_P^2$. Kita misalkan waktu yang dibutuhkan ber-distribusi normal. Setelah dilakukan percobaan, didapatkanlah hasil seperti berikut:
+
+| Pria      | Wanita    |
+| --------- | --------- |
+| $n = 11$  | $n = 14$  |
+| $S = 6.1$ | $S = 5.3$ |
+Misalkan setelah eksperimen, ada yang mengatakan bahwa ternyata $\sigma_W^2 < \sigma_P^2$. Buktikanlah mana yang benar, dengan $\alpha = 0.1$!
+
+$$\begin{align}
+H_0: \sigma_W^2 = \sigma_P^2\\
+H_1: \sigma_W^2 \neq \sigma_P^2\\
+---\\
+\text{Misalkan pria = A, wanita = B}\\
+n_A = 11\\
+S_A = 6.1\\
+n_B = 14\\
+S_B = 5.3\\
+\alpha = 0.05\rightarrow 1-\alpha = 0.95\\
+---\\
+f_H = \frac{6.1^2}{5.3^2}=1.324\\
+f_{0.05;10;13}=2.671\\
+f_{1-0.05;10;13}=0.346\\
+\\
+f_H \neq f_H < f \wedge f_H > f\text{, hipotesis diterima}
+\end{align}$$
+
+# Uji $\chi^2$ (Chi-Squared)
+Berikut adalah rumus untuk menentukan $\chi_H^2$:
+$$\begin{align}
+\chi_H^2 = \Sigma_{i=1}^n \frac{(O_i-E_i)^2}{E_i}
+\end{align}$$
+dengan daerah kritis: $\chi_H^2 < \chi^2$ ($\chi_H^2$ **tidak melebihi** $\chi^2$ agar $H_0$ diterima)
+
+## Pembuatan Tabel
+Setiap uji $\chi^2$ memerlukan tabel seperti berikut:
+
+| $n$ | $O_i$ | $E_i$ | $\frac{(O_i-E_i)^2}{E_i}$ |
+| --- | ----- | ----- | ------------------------- |
+di mana:
+- $n$ = jumlah kategori
+- $O_i$ = berapa kategori tersebut muncul
+- $E_i$ = harapan kategori muncul
+
+## Good of Fit Test
+Tipe pertama ujian $\chi^2$, di gunakan untuk memastikan distribusi / peluang dalam cerita adalah benar.
+$$\begin{align}
+E_i = P\cdot N
+\end{align}$$
+- Jangan keliru, $N$ adalah berapa kali percobaan dilakukan, sementara $n$ adalah jumlah kategori
+
+## Contoh Soal Good of Fit Test
+1. Sebuah dadu dilempar 120 kali. Apakah dadu ini dadu yang adil? Gunakanlah $\alpha = 0.05$!
+
+| $n$ | $O_i$ |
+| --- | ----- |
+| 1   | 25    |
+| 2   | 17    |
+| 3   | 15    |
+| 4   | 23    |
+| 5   | 24    |
+| 6   | 16    |
+
+Dari data tersebut, bisa disimpulkan peluang dadu yang adil adalah ketika $E_i = 120\div 6 = 20$, maka:
+
+| $n$ | $O_i$ | $E_i$ | $\frac{(O_i-E_i)^2}{E_i}$ |
+| --- | ----- | ----- | ------------------------- |
+| 1   | 25    | 20    | 1.25                      |
+| 2   | 17    | 20    | 0.45                      |
+| 3   | 15    | 20    | 1.25                      |
+| 4   | 23    | 20    | 0.45                      |
+| 5   | 24    | 20    | 0.8                       |
+| 6   | 16    | 20    | 0.8                       |
+$\chi_H^2 = \Sigma \frac{(O_i-E_i)^2}{E_i} = 5$
+
+$\chi_{0.05;5} = 11.07$
+
+$\chi_H^2 < \chi^2$, Hipotesis dadu adil diterima
+
+## Uji Kebebasan
+Adalah tipe lain dari Good of Fit Test, digunakan ketika terdapat kategori A dan B pada cerita, sehingga terdapat $A\cdot B$ kategori. Hal yang berbeda adalah $\chi^2$, di mana rumusnya berubah menjadi $\chi_{\alpha;vA \cdot vB}^2$.
+
+Karena tabel memiliki kategori yang saling berhubungan, maka $E_i = \frac{n_{An} \cdot n_{Bn} }{N}$
+
+## Contoh Soal Uji Kebebasan
+1. Terdapat tabel antara umur dengan minuman seperti berikut, apakah faktor umur memengaruhi selera minum? Gunakan $\alpha = 0.05$!
+![[Soal uji kebebasan 1.png]]
+
+![[Soal uji kebebasan 1 - 2.png]]
+
+![[Soal uji kebebasan 1 - 3.png]]
+
+$\chi^2_{0.05;3\cdot 2} = 12.592$
+
+$\chi_H \neq \chi_H < \chi^2$, Hipotesis ditolak
+
+# Uji Liliefors
