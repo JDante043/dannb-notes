@@ -1,9 +1,9 @@
 # TLDR
-- This is a repository for my college notes, written with obsidian.
+- This is a repository for my college notes, written with [obsidian](https://obsidian.md).
 - While this README is written in english, the notes are written in Indonesian.
 - Everything's written in markdown, use [this cheatsheet](https://www.markdownguide.org/basic-syntax/) to familiarise yourself if you want.
 - If a note is missing, broken, contains misinformation, or the likes, please open an issue.
-- The `.obsidian/` folder is not backed up to simplify things. It is up to you whether to download the recommended extensions.
+- The `.obsidian/` folder is not backed up to simplify things. It is up to you whether to download the recommended extensions or not.
 
 # Recommended Extensions
 - [Excalidraw](https://github.com/zsviczian/obsidian-excalidraw-plugin)
