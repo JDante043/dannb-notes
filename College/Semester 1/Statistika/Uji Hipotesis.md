@@ -126,17 +126,6 @@ v=n-1\\
 | $\chi_H^2 < \chi_{1-0.5\alpha}^2$ dan $\chi_H^2 > \chi_{0.5\alpha}^2$; Two-tailed |
 | $\chi_H^2 < \chi_{1-\alpha}^2$; $\sigma^2 < \sigma_0$                             |
 | $\chi_H^2 > \chi_{\alpha}^2$; $\sigma^2 > \sigma_0$                               |
-
-# Uji Rasio Varians
-$$\begin{align}
-f = \frac{S_A^2}{S_B^2}
-\end{align}$$
-
-| Daerah Kritis                                                     |
-| ----------------------------------------------------------------- |
-| $f<f_{1-0.5\alpha;vA;vB}$ dan $f>f_{0.5\alpha;vA;vB}$; Two-tailed |
-| $f<f_{1-0.5\alpha;vA;vB}$; $\sigma_A^2 <\sigma_B^2$               |
-| $f>f_{0.5\alpha;vA;vB}$;$\sigma_A^2 > \sigma_B^2$                 |
 # $\chi^2$
 
 (header) Tabel adalah
@@ -144,3 +133,65 @@ f = \frac{S_A^2}{S_B^2}
 | $x$ | $O_i$ | $E_i$ | $\frac{(O_i - E_i)^2}{E_i}$ |
 | --- | ----- | ----- | --------------------------- |
 |     |       |       |                             |
+
+# Uji Rasio Varians
+$$\begin{align}
+f_H = \frac{S_A^2}{S_B^2}
+\end{align}$$
+
+| Daerah Kritis                                                         |
+| --------------------------------------------------------------------- |
+| $f_H<f_{1-0.5\alpha;vA;vB}$ dan $f_H>f_{0.5\alpha;vA;vB}$; Two-tailed |
+| $f_H<f_{1-0.5\alpha;vA;vB}$; $\sigma_A^2 <\sigma_B^2$                 |
+| $f_H>f_{0.5\alpha;vA;vB}$;$\sigma_A^2 > \sigma_B^2$                   |
+|                                                                       |
+
+# Uji Bartlett / Uji multivarians
+Terdapat beberapa langkah untuk melakukan uji Bartlett:
+
+## Menghitung b (daerah kritis)
+Terdapat 2 cara menghitung daerah kritis, tergantung dengan ukuran sampel setiap populasi:
+### Daerah kritis ketika semua sampel sama besar ($n_A = n_B = ...$)
+Lihat tabel, cari $b_{k;\alpha;n}$, di mana:
+- $k$ = total / jumlah populasi
+- $\alpha$ = konfidensi
+- $n$ = jumlah sampel di setiap populasi
+
+### Daerah kritis ketika setiap sampel beda besar ($n_A \neq n_B \neq ...$)
+$$\begin{align}
+b = \frac{(n_A)(b_{k;\alpha;n_A})+(n_B)(b_{k;\alpha;n_B})+...}{N}
+\end{align}$$
+
+## Menghitung $b_H$
+$$\begin{align}
+S_P^2 = \frac{(n_A-1)S_A^2+(n_B-1)S_B^2+...}{n_A -1 + n_b-1 + ...}\\
+\\
+b_H = \frac{(S_A^2)^{n_A-1}\cdot (S_B^2)^{n_B-1}\cdot...}{S_P^2}
+\end{align}$$
+
+Daerah kritis selalu left-tailed $(b_H < b)$
+
+# Analisis Varians / ANOVA
+ANOVA merupakan tes rata-rata yang bisa dipakai ketika populasi lebih dari 2
+Daerah kritis ANOVA selalu $f_H < f$, artinya $H_0$ akan ditolak ketika $f_H$ lebih kecil dari tabel $f$
+
+## ANOVA 1 Faktor
+Terdapat beberapa langkah untuk mengerjakan metode ANOVA:
+1. Hitung rata-rata setiap sampel ($\bar{x}_A, \bar{x}_B,...$)
+2. Hitung varians setiap sampel ($S_A^2, S_B^2, ...$)
+3. Hitung rata-rata dari varians sampel ($\bar{x}_{S^2}$)
+4. Hitung rata-rata dari rata-rata sampel ($\bar{\bar{x}}$)
+5. Hitung varians dari rata-rata sampel dengan rata-rata rata-rata sampel ($\S_{\bar{\bar{x}}}^2$)
+6.  Hitunglah $f_H$ dengan: $$\begin{align}
+f_H = \frac{n\cdot S_{\bar{\bar{x}}}^2}{\bar{x}_{S^2}}
+\end{align}$$
+
+## ANOVA Multifaktor
+Untuk mengerjakan ANOVA multifaktor, maka digunakan tabel ANOVA:
+
+| Variasi     | Derajat Kebebasan (V) | Jumlah Kuadrat (SS)                            | Rata-rata Kuadrat (MS) | Statistik F       |
+| ----------- | --------------------- | ---------------------------------------------- | ---------------------- | ----------------- |
+| Faktor A    | $N_A -1$              | $N_B \cdot \Sigma (\bar{x}_A-\bar{\bar{x}})^2$ | $\frac{SSA}{V_A}$      | $\frac{MSA}{MSE}$ |
+| Faktor B    | $N_B -1$              | $N_A\cdot \Sigma(\bar{x}_B - \bar{\bar{x}})^2$ | $\frac{SSB}{V_B}$      | $\frac{MSB}{MSE}$ |
+| Faktor Eror | $(N_A -1)(N_B -1)$    | $\Sigma_A \Sigma_B (x_{AB}-\bar{\bar{x}})$     | $\frac{SSE}{V_E}$      |                   |
+| Total       | $b(k-1)$              | $\Sigma SS$                                    |                        |                   |

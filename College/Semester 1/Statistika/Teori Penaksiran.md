@@ -128,7 +128,7 @@ $$\begin{align}
 ### Rasio Varians
 Misal $s_A^2$ dan $s_B^2$ adalah varians sampel populasi A dan B, maka dapat dihitung rasio varians populasi:
 $$\begin{align}
-\frac{s_A^2}{s_B^2}\cdot \frac{1}{f_{0.5\alpha;v_1;v_2}} \lt \frac{\sigma_A^2}{\sigma_B^2} \lt \frac{s_A^2}{s_B^2}f_{0.5\alpha;v_1;v_2}
+\frac{s_A^2}{s_B^2}\cdot \frac{1}{f_{0.5\alpha;v_1;v_2}} \lt \frac{\sigma_A^2}{\sigma_B^2} \lt \frac{s_A^2}{s_B^2}f_{0.5\alpha;v_2;v_1}
 \end{align}$$
 
 ## Contoh Soal Estimasi Interval
