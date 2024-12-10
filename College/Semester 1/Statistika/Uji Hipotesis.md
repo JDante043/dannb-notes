@@ -239,7 +239,23 @@ Gunakan tabel peringkat Wilcoxon untuk mencari titik kritis
 - Gunakan tabel daerah kritis untuk mencari kesimpulan
 
 ## Sampel Besar
-###
+### Daerah Kritis & Rumus
+| Jika $H_1$:      | Carilah:                                   | Tolak $H_0$ jika:                                    |
+| ---------------- | ------------------------------------------ | ---------------------------------------------------- |
+| $\mu \lt \mu_0$  | $Z_H=\frac{W^+ -\mu_T}{\sigma_T}$          | $Z_H \lt Z_\alpha$                                   |
+| $\mu \gt \mu_0$  | $Z_H=\frac{W^- - \mu_T}{\sigma_T}$         | $Z_H \gt Z_{1-\alpha}$                               |
+| $\mu \neq \mu_0$ | $Z_H=\frac{\min(W^-,W^+)-\mu_T}{\sigma_T}$ | $Z_H \lt Z_{0.5\alpha} \cup Z_H \gt Z_{1-0.5\alpha}$ |
+$$\begin{align}
+\mu_T = \frac{n(n+1)}{4}\\
+\sigma_T = \sqrt{\frac{n(n+1)(2n+1)}{24}}
+\end{align}$$
+### Prosedur
+- Buatlah tabel semua sampel
+- Bandingkan sampel, dengan sebuah target yang diinginkan
+- Jika sampel tidak mencapai target, *tag* dengan tanda `-`, jika mencapai, *tag* dengan tanda `+`.;
+- Jumlahkan semua yang bertanda `-` dan `+`, masing-masing namanya $W^-$ dan $W^+$.
+
+
 
 # Kruskal-Wallis Test
 Uji Kruskal-Wallis adalah uji rata-rata 3 populasi atau lebih, **ketika ukuran populasi tidak sama**
