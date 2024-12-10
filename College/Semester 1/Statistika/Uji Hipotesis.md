@@ -173,6 +173,8 @@ Daerah kritis selalu left-tailed $(b_H < b)$
 
 # Analisis Varians / ANOVA
 ANOVA merupakan tes rata-rata yang bisa dipakai ketika populasi lebih dari 2
+
+## Daerah Kritis
 Daerah kritis ANOVA selalu $f_H < f$, artinya $H_0$ akan ditolak ketika $f_H$ lebih kecil dari tabel $f$
 
 ## ANOVA 1 Faktor
@@ -195,3 +197,63 @@ Untuk mengerjakan ANOVA multifaktor, maka digunakan tabel ANOVA:
 | Faktor B    | $N_B -1$              | $N_A\cdot \Sigma(\bar{x}_B - \bar{\bar{x}})^2$ | $\frac{SSB}{V_B}$      | $\frac{MSB}{MSE}$ |
 | Faktor Eror | $(N_A -1)(N_B -1)$    | $\Sigma_A \Sigma_B (x_{AB}-\bar{\bar{x}})$     | $\frac{SSE}{V_E}$      |                   |
 | Total       | $b(k-1)$              | $\Sigma SS$                                    |                        |                   |
+# Sign Test
+Uji Sign adalah uji rata-rata ketika distribusi soal tidak diketahui (bukan distribusi normal).
+
+Uji ini melihat selisih setiap data dari suatu target, kemudian menggunakan nilai kumulatif distribusi binomial untuk melihat jika suatu sampel mencapai target tersebut.
+
+## Daerah Kritis
+| $H$                                                            | Tolak $H_0$ jika:                                                |
+| -------------------------------------------------------------- | ---------------------------------------------------------------- |
+| $$\begin{align}H_0: \mu = \mu_0\\H_1:\mu\neq\mu_0\end{align}$$ | $$\begin{align}x<B_{0.5\alpha}\\ x> B_{1-0.5\alpha}\end{align}$$ |
+| $$\begin{align}H_0:\mu=\mu_0\\H_1: \mu<\mu_0 \end{align}$$     | $x<B_{\alpha}$                                                   |
+| $$\begin{align}H_0: \mu=\mu_0\\H_1: \mu>\mu_0\end{align}$$     | $x>B_{a-\alpha}$                                                 |
+Dimana:
+$x =$ jumlah nilai yang lebih besar dari / mencapai nilai yang diinginkan
+$B =$ nilai $n$ pada tabel kumulatif distribusi binomial yang maksimal sebelum melebihi $\alpha$
+
+## Prosedur
+- Buatlah tabel semua sampel
+- Bandingkan sampel, dengan sebuah target yang diinginkan
+- Jika sampel tidak mencapai target, *tag* dengan tanda `-`, jika mencapai, *tag* dengan tanda `+`.
+- Setelah semua sampel dicek, carilah nilai $n$ kumulatif binomial pada peluang $0.5$ yang paling tinggi, tapi tidak melebihi nilai $\alpha$
+- Nilai $n$ tersebut adalah batas daerah kritis, lihat tabel penolakan $H_0$
+# Wilcoxon Test
+Merupakan tes yang dilakukan untuk mengecek sampel yang berasal dari populasi yang sama
+
+## Sampel kecil $(n\le 15)$
+### Daerah Kritis
+Gunakan tabel peringkat Wilcoxon untuk mencari titik kritis
+
+| Jika $H_1$:      | Carilah:        | Tolak $H_0$ jika: |
+| ---------------- | --------------- | ----------------- |
+| $\mu < \mu_0$    | $W^+$           | $W^+ \le T$       |
+| $\mu > \mu_0$    | $W^-$           | $W^- \le T$       |
+| $\mu \neq \mu_0$ | $\min(W^+,W^-)$ | $W \le T$         |
+
+### Prosedur
+- Buatlah tabel semua sampel
+- Bandingkan sampel, dengan sebuah target yang diinginkan
+- Jika sampel tidak mencapai target, *tag* dengan tanda `-`, jika mencapai, *tag* dengan tanda `+`.;
+- Jumlahkan semua yang bertanda `-` dan `+`, masing-masing namanya $W^-$ dan $W^+$.
+- Gunakan tabel daerah kritis untuk mencari kesimpulan
+
+## Sampel Besar
+###
+
+# Kruskal-Wallis Test
+Uji Kruskal-Wallis adalah uji rata-rata 3 populasi atau lebih, **ketika ukuran populasi tidak sama**
+## Daerah Kritis
+$H_0$ akan selalu ditolak ketika $K > \chi_{\alpha;m-1}^2$.
+## Prosedur
+Untuk melakukan uji Kruskal-Wallis, diperlukan beberapa langkah:
+- Buatlah tabel keseluruhan populasi, beserta sampel mereka
+- Buatlah ranking setiap nilai populasi, mulai dari yang terkecil - besar
+	- Jika ada sampel yang sama, rata-ratakan mereka **setelah** proses ranking selesai
+- Jumlahkan ranking masing-masing sampel, kemudian gunakan rumus
+
+$K=\frac{12}{N(N+1)}[\frac{R_{A}^2}{n_A} + \frac{R_{B}^2}{n_B}+...]-3(N+1)$
+Dimana:
+$N =$ Jumlah semua sampel
+$n =$ ukuran sampel sebuah populasi
+$R =$ Jumlah ranking suatu populasi

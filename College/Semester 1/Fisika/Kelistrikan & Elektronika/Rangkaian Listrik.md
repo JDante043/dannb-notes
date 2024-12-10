@@ -1,5 +1,8 @@
-# Rumus
-## Resistensi (R)
+Note: Title rumus dalam bentuk NAMA(SINGKATAN, RUMUS)
+
+# Resistor $(V=IR)$
+
+## Hambatan ($R, \ohm$)
 ### Seri
 $$\begin{align}
 R = R_1 + R_2 + ...
@@ -8,29 +11,55 @@ R = R_1 + R_2 + ...
 $$\begin{align}
 \frac{1}{R} = \frac{1}{R_1}+\frac{1}{R_2}+...
 \end{align}$$
-## Arus (A)
-$$\begin{align}
-I = I_1 = I_2\\
-IR = IR_1 + IR_2
-\end{align}$$
-## Tegangan (V)
-$$\begin{align}
-V = V_1 + V_2\\
-V=IR
-\end{align}$$
 
-## Kapasitor (C)
+## Arus ($I, A$)
 ### Seri
 $$\begin{align}
-Q = Q_1 = Q_2 = ...\\
-\frac{1}{C}=\frac{1}{C_1} + \frac{1}{C_2} + ...\\
-V = V_1+V_2 + ...
+I = I_A = I_B = I_C = ...\\
 \end{align}$$
-### Paralel
+
+### Parallel
+Arus tidak sama rata jika rangkaian parallel, gunakan $V_{A}=I_A \cdot R_A$ untuk mencari $I_A$
+## Tegangan ($V, V$)
+### Seri
+Tegangan tidak sama rata jika rangkaian seri, gunakan $V_A=I_A\cdot R_A$ untuk mencari $V_A$
+
+### Parallel
 $$\begin{align}
-
+V = V_1 + V_2\\
 \end{align}$$
 
+# Kapasitor $(Q = CV)$
+## Muatan Listrik ($Q, C$)
+### Seri
+$$\begin{align}
+Q = Q_1 = Q_2+...
+\end{align}$$
+### Parallel
+$$\begin{align}
+Q = Q_1 + Q_2+...
+\end{align}$$
+
+## Beda Potensial ($V, V$)
+### Seri
+$$\begin{align}
+V = V_1 + V_2 + ...
+\end{align}$$
+### Parallel
+$$\begin{align}
+V = V_1 = V_2 = ...
+\end{align}$$
+
+## Kapasitansi ($C, F$)
+### Seri
+$$\begin{align}
+\frac{1}{C}=\frac{1}{C_1}+\frac{1}{C_2}+...
+\end{align}$$
+
+### Parallel
+$$\begin{align}
+C = C_1 + C_2 + ...
+\end{align}$$
 # Contoh Soal
 1. Misal terdapat rangkaian seperti gambar berikut, hitunglah:![[Contoh Rangkaian Resistensi]]
 	1. Hambatan ekivalen pada rangkaian
