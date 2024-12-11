@@ -99,3 +99,22 @@ B:\\
 $$\begin{align}
 \Phi = \frac{Q}{\epsilon_0} = EA \text{ Jika tegak lurus} = EA\cos{(\alpha)} \text{ Jika bukan}\\
 \end{align}$$
+
+# Flux
+## Flux Magnet
+$$\begin{align}
+\phi = B\cdot A\cdot \cos{(\theta)}
+\end{align}$$
+$\phi$ = Wb
+$B$ = T
+$A$ = $M^2$
+
+## Perubahan Flux Magnetik
+$$\begin{align}
+\Delta \phi = \phi_1-\phi_0
+\end{align}$$
+
+## Gaya Gerak Listrik Induksi
+$$\begin{align}
+\epsilon = -N \frac{\Delta\phi}{\Delta t}
+\end{align}$$

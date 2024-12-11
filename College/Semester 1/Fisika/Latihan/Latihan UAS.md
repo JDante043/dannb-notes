@@ -53,3 +53,26 @@ Q=CV \rightarrow Q = 3\cdot 6 = 18\\
 \\
 
 \end{align}$$
+
+5. Perhatinkan gambar berikut!
+![[Latihan UAS 5.excalidraw]]
+$$\begin{align}
+C_1 = C_2 = 200\mu F\\
+C_3 = C_4 = 400\mu F\\
+V = 4V\\
+Q_1 \& Q_4\\
+\\
+\frac{1}{C_{12}}=\frac{1}{200}+\frac{1}{200} = \frac{1}{100}\rightarrow C_{12}=100\mu F\\
+\frac{1}{C_{34}}=\frac{1}{400}+\frac{1}{400} = \frac{1}{200}\rightarrow C_{34}=200\mu F\\
+\\
+C=100+200 = 300\mu F\\
+\\
+Q=CV=300\cdot 4 = 1200C\\
+\\
+Q_{12}=C_{12}V_{12}=100\cdot 4 = 400C\\
+Q=Q_{12}+Q_{34} \rightarrow 1200 = 400 + Q_{34}\rightarrow Q_{34}=800C\\
+
+\text{Seri, }\\
+Q_{12}=Q_1=Q_2\\
+Q_{34}=Q_3=Q_4\\
+\end{align}$$

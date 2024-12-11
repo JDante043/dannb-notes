@@ -35,7 +35,7 @@ V = V_1 + V_2\\
 ## Muatan Listrik ($Q, C$)
 ### Seri
 $$\begin{align}
-Q = Q_1 = Q_2+...
+Q = Q_1 = Q_2=...
 \end{align}$$
 ### Parallel
 $$\begin{align}
