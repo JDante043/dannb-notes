@@ -16,8 +16,8 @@ $$\begin{align}
 \end{align}$$
 ## Power Rule
 $$\begin{align}
-\frac{d}{dx}x^n\\
-= n\cdot x^{n-1}
+f(x) = x^n\\
+f'(x) = n\cdot x^{n-1}
 \end{align}$$
 ## Chain Rule
 $$\begin{align}

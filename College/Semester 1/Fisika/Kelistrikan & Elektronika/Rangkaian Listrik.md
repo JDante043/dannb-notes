@@ -1,4 +1,6 @@
-Note: Title rumus dalam bentuk NAMA(SINGKATAN, RUMUS)
+Note: 
+- Title H1 dalam bentuk NAMA(SINGKATAN, RUMUS)
+- Title H2 dalam bentuk NAMA(SINGKATAN, SATUAN)
 
 # Resistor $(V=IR)$
 
