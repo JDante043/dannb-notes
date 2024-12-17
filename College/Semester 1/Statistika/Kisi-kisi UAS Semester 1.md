@@ -61,5 +61,7 @@ S_P = \sqrt{599.6433566}=24.48761639\\
 t_{0.5\alpha;v}\approx t_{0.025;\infty}=1.96\\
 \\
 (\bar{x}_A - \bar{x}_B)\pm t_{0.5\alpha;v}\cdot S_P\cdot\sqrt{\frac{1}{n_A}+\frac{1}{n_B}}\\
-(510-518)\pm 1.96\cdot 24.48761639\cdot
+(510-518)\pm 1.96\cdot 24.48761639\cdot\sqrt{\frac{1}{70}+\frac{1}{75}}\\
+= -8\pm 7.8764\\
+= -15.9764 < \mu_A - \mu_B < -0.0236\\
 \end{align}$$
