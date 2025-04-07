@@ -1,0 +1,1 @@
+Riset Operasi adalah bidang matematika yang mempelajari ke-efisienan suatu operasi secara analitikal.
