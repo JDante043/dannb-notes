@@ -33,10 +33,10 @@ $$\begin{align}
 \end{align}$$
 Maka, bilangan biner adalah $(10000101)_2$
 
-# Oktaldesimal / Octaldecimal / Base 8
+# Oktal / Octal / Base 8
 Sistem penomoran dengan 8 digit: 0-7
 
-## Oktaldesimal -> desimal
+## Oktal -> desimal
 1. Mulai dari digit paling kanan
 2. Perhatikan juga lokasi digit dari kanan
 3. Kalikan digit dengan $7^n$, di mana $n$ adalah lokasi dari kanan, mulai dari 0
@@ -48,7 +48,17 @@ Misal terdapat $(105)_8$:
 3. $1\cdot 8^2 = 64$
 4. $5 + 0 + 64 = 69$
 
-## Desimal -> Oktadesimal
+## Desimal -> Oktal
+1. Bagi nomor Desimal dengan 8, perhatikan juga sisanya
+2. Lakukan sampai hasil pembagian 0
+3. Lihat dari atas sampa bawah
+
+Misal terdapat $(1792)_{10}$. Maka angka oktalnya adalah:
+1. $1792\div 8 = 224 [0]$
+2. $224\div 8 = 28 [0]$
+3. $28\div 8 = 3 [4]$
+4. $3\div 8 = 0 [3]$
+Maka, angka oktalnya adalah $(3400)_8$
 
 # Heksadesimal / Hexadecimal / Base 16
 Sistem penomoran dengan 16 digit: 0-9 dan A-F.
