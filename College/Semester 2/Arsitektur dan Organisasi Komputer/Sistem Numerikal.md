@@ -3,7 +3,8 @@ Manusia biasanya menggunakan sistem hitung berbasis 10 / desimal. Artinya, terda
 # Biner / Binary / Base 2
 Merupakan sistem di mana angka yang digunakan adalah 0 dan 1
 
-## Biner -> Desimal
+## Biner -> Base 10
+### Integer
 Misalkan terdapat biner $(1101)_2$. Cara mencari angka desimal adalah:
 1. Mulai dari nomor paling **kanan**
 2. Ingat lokasi nomor yang sekarang dicek (dihitung dari kanan, mulai dari 0)
@@ -13,8 +14,15 @@ Misalkan terdapat biner $(1101)_2$. Cara mencari angka desimal adalah:
 Berdasarkan langkah-langkah tersebut, didapatkan:
 $2^3 + 2^2 + 0 + 2^0 = 8 + 4 + 0 + 1 = 13$
 
-## Desimal -> Biner
-Misalkan terdapat desimal $(133)_{10}$. Cara mencari angka biner adalah:
+### Pecahan
+$n$ di kanan titik / koma mulai dari $-1$. Misalkan $(0.1011)_2$, maka
+$$\begin{align}
+(1\cdot 2^{-1}) + (0\cdot 2^{-2}) + (1\cdot 2^{-3}) + (1\cdot 2^{-4})\\
+= 0.5 + 0 + 0.125 + 0.0625 = 0.6875
+\end{align}$$
+## Base 10 -> Biner
+### Integer
+Misalkan terdapat $(133)_{10}$. Cara mencari angka biner adalah:
 1. Bagi nomor desimal dengan 2, lalu catat sisanya.
 2. Lakukan sampai bilangan desimal menjadi 1
 3. Catat 1 di paling akhir.
@@ -29,17 +37,32 @@ $$\begin{align}
 8/2 = 4\ [0]\\
 4/2 = 2\ [0]\\
 2/2 = 1\ [0]\\
-1/2 = 1\ [1]\\
+1/2 = 0\ [1]\\
 \end{align}$$
 Maka, bilangan biner adalah $(10000101)_2$
 
+### Pecahan
+Untuk pecahan,
+1. Untuk angka sebelum titik/koma, gunakan cara biasa
+2. Untuk angka setelah titik/koma, kalikan dengan 2; lihat apakah jawaban >1
+3. Jika jawaban >1, tulis sisa = 1 dan kurangi angka sekarang dengan 1, lanjut
+4. Jika jawaban <1, tulis sisa = 0, lanjut
+5. Jawaban adalah sisa **dari atas ke bawah**
+
+Misalkan terdapat $(0.8125)_{10}$:
+1. $0.8125\cdot 2 = 1.625 [1]$
+2. $0.625\cdot 2 = 1.25 [1]$
+3. $0.25\cdot 2 = 0.5 [0]$
+4. $0.5\cdot 2 = 1.0 [1]$
+
+Maka, jawaban adalah $(0.1101)_2$
 # Oktal / Octal / Base 8
 Sistem penomoran dengan 8 digit: 0-7
 
-## Oktal -> desimal
+## Oktal -> Base 10
 1. Mulai dari digit paling kanan
 2. Perhatikan juga lokasi digit dari kanan
-3. Kalikan digit dengan $7^n$, di mana $n$ adalah lokasi dari kanan, mulai dari 0
+3. Kalikan digit dengan $8^n$, di mana $n$ adalah lokasi dari kanan, mulai dari 0
 4. Tambahkan ke hasil akhir, kemudian pindah ke kiri
 
 Misal terdapat $(105)_8$:
@@ -48,7 +71,7 @@ Misal terdapat $(105)_8$:
 3. $1\cdot 8^2 = 64$
 4. $5 + 0 + 64 = 69$
 
-## Desimal -> Oktal
+## Base 10 -> Oktal
 1. Bagi nomor Desimal dengan 8, perhatikan juga sisanya
 2. Lakukan sampai hasil pembagian 0
 3. Lihat dari atas sampa bawah
@@ -69,7 +92,7 @@ D = 13
 E = 14
 F = 15
 
-## Heksadesimal -> Desimal
+## Heksadesimal -> Base 10
 1. Mulai dari digit paling kanan
 2. Perhatikan juga lokasi digit dari kanan
 3. Kalikan digit dengan $16^n$, di mana $n$ adalah lokasi dari kanan, mulai dari 0
@@ -81,7 +104,7 @@ Misalkan terdapat $(7CF)_{16}$, maka
 3. 7 = 7. $(7\cdot 16^2) = 1792$
 4. $15+192+1792 = 1999$
 
-## Desimal -> Heksadesimal
+## Base 10 -> Heksadesimal
 Misal terdapat $(960)_{10}$, maka bilangan heksadesimalnya adalah:
 1. Bagi digit dengan 16, perhatikan sisanya
 2. Ulangi hingga hasilnya > 1
