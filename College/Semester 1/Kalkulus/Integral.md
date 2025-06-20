@@ -30,6 +30,8 @@ $$\begin{align}
 \int\frac{1}{\sqrt{a^2+x^2}}dx=\ln{(|x+\sqrt{x^2+a^2)}|)}\\
 \int\frac{1}{\sqrt{x^2-a^2}}dx=\ln{(|x+\sqrt{x^2-a^2}|)}\\
 \int\frac{1}{x^2-a^2}dx=\frac{1}{2a}\ln{(|\frac{x-a}{x+a}|)}\\
+\int\frac{1}{x}dx = \ln{(|x|)}+C\\
+\int\frac{1}{x^n} = -\frac{1}{(n-1)x^{n-1}}+C;\ n\neq 1\\
 \end{align}$$
 
 # Rumus Dasar

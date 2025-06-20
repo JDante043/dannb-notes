@@ -96,7 +96,7 @@ WHERE nim_mahasiswa LIKE '%2025%';
 -- Tampilkan mahasiswa yang nilai UASnya lulus dan nilainya 80-100
 SELECT nama_mahasiswa AS "Mahasiswa", nilai_uas AS "Nilai UAS", verdict_uas AS "Verdict"
 FROM database_uas_mahasiswa_2025
-WHERE verdict_uas IN ('LULUS') AND nilai_uas IN (80,100);
+WHERE verdict_uas IN ('LULUS') AND nilai_uas BETWEEN 80 AND 100;
 ```
 
 ## Mengurut data yang disajikan

@@ -21,7 +21,7 @@ Contoh graf kosong:
 ![[Graf kosong.png]] 
 
 ## Berdasarkan kondisi sisi
-Lihat [[Graph Theory#^405952| Gambar graf pertama kita]]. Perhatikan bahwa sisinya tidak mempunyai arah. Graf merupakan graf **tidak berarah**. Jika terdapat arah, maka graf tersebut merupakan graf **berarah**.
+Lihat [[Graf#^405952| Gambar graf pertama kita]]. Perhatikan bahwa sisinya tidak mempunyai arah. Graf merupakan graf **tidak berarah**. Jika terdapat arah, maka graf tersebut merupakan graf **berarah**.
 
 ### Tabel Tipe Graf
 
