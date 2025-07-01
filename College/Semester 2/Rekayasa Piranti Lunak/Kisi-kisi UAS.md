@@ -150,4 +150,4 @@
 - Determine project type
 - assess degree of rigor required
 - identify adaptation criteria
-- select appropriate software engineering tasks
+	- select appropriate software engineering tasks 
