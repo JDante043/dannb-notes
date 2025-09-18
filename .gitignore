@@ -5,4 +5,11 @@
 # config dir
 .obsidian/
 
+# Possibly copyrighted stuff
+*Books/*
+
+# Private notes
+Miscl./*
+
+
 # End of https://www.toptal.com/developers/gitignore/api/obsidian
